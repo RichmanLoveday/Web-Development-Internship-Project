@@ -1,5 +1,6 @@
 import { ButtonUI } from "./Button";
 import Logo from "./Logo";
+import profileImg from "../src/assets/profile_image.png";
 
 function Header() {
   return (
@@ -38,11 +39,7 @@ function Header() {
             <i className="fa-solid fa-circle-xmark p-1 bg-white rounded-full"></i>
           </div>
         </div>
-        <img
-          src="../src/assets/profile_image.png"
-          className="w-16 h-16 rounded-full"
-          alt=""
-        />
+        <img src={profileImg} className="w-16 h-16 rounded-full" alt="" />
 
         <div>
           <ButtonUI

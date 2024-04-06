@@ -1,5 +1,6 @@
 import LoginForm from "../features/Login/loginForm";
 import Logo from "../../ui/Logo";
+import LoginImg from "../assets/login_image.png";
 
 function Login() {
   return (
@@ -15,12 +16,7 @@ function Login() {
           </h1>
         </div>
         <div className="mb-56">
-          <img
-            src="../src/assets/login_image.png
-        "
-            className="w-full"
-            alt=""
-          />
+          <img src={LoginImg} className="w-full" alt="" />
           <a
             href="#"
             className="underline cursor-pointer mx-auto"

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ButtonUI } from "../../ui/Button";
 import MinorHeader from "../../ui/MinorHeader";
 import { PageTitle } from "../../ui/PageTittle";
+import profile_image from "../assets/profile_image.png";
 
 export function Profile() {
   return (
@@ -19,7 +20,7 @@ export function Profile() {
           <div className="flex justify-start items-start space-x-16 mt-10 mb-24 p-5">
             <img
               className=" w-52 h-52 rounded-full"
-              src="../src/assets/profile_image.png"
+              src={profile_image}
               alt=""
             />
             <div className="space-y-5 my-5">

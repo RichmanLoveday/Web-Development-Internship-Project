@@ -3,6 +3,9 @@ import MinorHeader from "../../ui/MinorHeader";
 import { PageTitle } from "../../ui/PageTittle";
 import { ButtonUI } from "../../ui/Button";
 import { Link } from "react-router-dom";
+import watch from "../assets/watch.png";
+import balls from "../assets/balls.png";
+import phone from "../assets/phone.png";
 
 export function WhatBringsYou() {
   const [card1, setCard1] = useState(false);
@@ -30,7 +33,7 @@ export function WhatBringsYou() {
               onClick={() => setCard1(!card1)}
             >
               <img
-                src="../src/assets/watch.png"
+                src={watch}
                 className={`w-80 h-60 mx-auto ${
                   !card1
                     ? "group-hover:-mt-20 transition ease-in-out"
@@ -79,7 +82,7 @@ export function WhatBringsYou() {
               onClick={() => setCard2(!card2)}
             >
               <img
-                src="../src/assets/balls.png"
+                src={balls}
                 className={`w-80 h-60 mx-auto ${
                   !card2
                     ? "group-hover:-mt-20 transition ease-in-out"
@@ -128,7 +131,7 @@ export function WhatBringsYou() {
               onClick={() => setCard3(!card3)}
             >
               <img
-                src="../src/assets/phone.png"
+                src={phone}
                 className={`w-80 h-60 mx-auto ${
                   !card3
                     ? "group-hover:-mt-20 transition ease-in-out"
