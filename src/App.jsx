@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import AppLayout from "../ui/AppLayout";
 import Login from "./pages/Login";
 import ConfirmEmail from "./pages/ConfirmEmail";
@@ -12,6 +12,7 @@ function App() {
         <Route element={<AppLayout />}>
           <Route path="confirmEmail" element={<ConfirmEmail />}></Route>
         </Route>
+        <Route index element={<Navigate replace to="login" />} />
         <Route path="login" element={<Login />}></Route>
         <Route path="profile" element={<Profile />}></Route>
         <Route path="what_brings_you" element={<WhatBringsYou />}></Route>
