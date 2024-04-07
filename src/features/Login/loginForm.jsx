@@ -4,7 +4,7 @@ import { ButtonUI } from "../../../ui/Button";
 function LoginForm() {
   return (
     <form action="">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-4 sm:space-y-12 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-4 space-y-12 md:space-y-0 mt-8">
         <div>
           <label className=" text-black font-bold text-2xl" htmlFor="">
             Name
